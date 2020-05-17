@@ -1,6 +1,6 @@
-/*
-* Класс для всех ошибок проекта
-*/
+/**
+ * Класс для всех ошибок проекта
+ */
 export default class ErrorRepository {
   constructor() {
     this.collectionErrors = new Map([
@@ -12,7 +12,7 @@ export default class ErrorRepository {
 
   /**
    * Метод для получения текста ошибки по коду
-   * @param  {} code - код (число) ошибки
+   * @param  {number} code - код ошибки
    */
   translate(code) {
     return (this.collectionErrors.has(code) ? this.collectionErrors.get(code) : "Unknown error");

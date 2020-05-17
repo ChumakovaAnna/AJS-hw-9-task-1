@@ -1,6 +1,6 @@
-/*
-* Класс для хранения персонажей команды в поле
-*/
+/**
+ * Класс для хранения персонажей команды в поле
+ */
 export default class Team {
   constructor() {
     this.members = new Set();
@@ -8,7 +8,7 @@ export default class Team {
 
   /**
    * Метод для добавления выбранного персонажа в команду
-   * @param  {} char - выбранный персонаж
+   * @param  {string} char - выбранный персонаж
    */
   add(char) {
     if (this.members.has(char)) {

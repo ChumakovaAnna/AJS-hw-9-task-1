@@ -1,9 +1,10 @@
-import Settings from "./settingsGeneral/settings";
+import Daemon from "./characters/types/daemon";
 
 console.log("worked");
-const usedSettings = new Settings();
+const daemon = new Daemon("Choo");
+daemon.getDamage = 2;
+console.log(daemon.damage);
 
-usedSettings.newSetting = "light";
-usedSettings.newSetting = "pop";
-
-console.log(usedSettings.settings);
+daemon.getStoned = true;
+daemon.getDamage = 2;
+console.log(daemon.damage);

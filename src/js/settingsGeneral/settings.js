@@ -1,6 +1,6 @@
-/*
-* Класс, который хранит пользовательские настройки
-*/
+/**
+ * Класс, который хранит пользовательские настройки
+ */
 export default class Settings {
   constructor() {
     this.defaultSettings = new Map([
@@ -13,7 +13,7 @@ export default class Settings {
 
   /**
    * свойство, распределяющее и сохраняющее пользовательские настройки
-   * @param  {} ele - значение, выбранное пользователем
+   * @param  {string} ele - значение, выбранное пользователем
    */
   set newSetting(ele) {
     if (ele === "light" || ele === "gray") {
@@ -27,8 +27,8 @@ export default class Settings {
     }
   }
 
-  /*
-  * свойство, возвращающее все действующие настройки
+  /**
+   * свойство, возвращающее все действующие настройки
    */
   get settings() {
     const set = new Map([...this.defaultSettings, ...this.userSettings]);
